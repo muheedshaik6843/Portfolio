@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shaik Muheed – Aspiring Java Full Stack Developer. Portfolio showcasing projects, skills, and experience." />
+  <meta name="keywords" content="Java Full Stack Developer, Spring Boot, React, Portfolio, Shaik Muheed" />
+  <meta name="author" content="Shaik Muheed" />
+  <meta property="og:title" content="Shaik Muheed | Java Full Stack Developer" />
+  <meta property="og:description" content="Portfolio of Shaik Muheed – Java Full Stack Developer with experience in Spring Boot, React, and MySQL." />
+  <meta property="og:type" content="website" />
+  <title>Shaik Muheed | Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">SM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Day / Night Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">☽</span>
+          </span>
+        </button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting fade-in-up" style="--delay:0.1s">👋 Hello, I'm</p>
+        <h1 class="hero-name fade-in-up" style="--delay:0.25s">Shaik<br /><span class="accent">Muheed</span></h1>
+        <p class="hero-title fade-in-up" style="--delay:0.4s">Java Full Stack Developer</p>
+        <p class="hero-tagline fade-in-up" style="--delay:0.55s">
+          Building robust, scalable web applications with<br />
+          <span class="highlight">Spring Boot</span> &amp; <span class="highlight">React</span> — one commit at a time.
+        </p>
+        <div class="hero-buttons fade-in-up" style="--delay:0.7s">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+        <div class="hero-socials fade-in-up" style="--delay:0.85s">
+          <a href="https://github.com/muheedshaik6843" target="_blank" class="social-icon" aria-label="GitHub">
+            <!-- GitHub SVG -->
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/muheed-shaik" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:muheedshaik6843@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-avatar fade-in-right" style="--delay:0.4s">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <span class="avatar-initials">SM</span>
+          </div>
+        </div>
+        <div class="avatar-badge">
+          <span class="badge-dot"></span>
+          Available for Opportunities
+        </div>
+        <div class="avatar-stats">
+          <div class="stat"><strong>3+</strong><span>Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>2</strong><span>Internships</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>2026</strong><span>Graduate</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text fade-in-up">
+          <p class="about-lead">
+            I'm an aspiring <strong>Java Full Stack Developer</strong> passionate about crafting clean, efficient, and scalable web applications that solve real-world problems.
+          </p>
+          <p>
+            With hands-on experience in <strong>Spring Boot</strong>, <strong>React.js</strong>, <strong>MySQL</strong>, and <strong>REST API development</strong>, I enjoy bridging the gap between robust backend logic and intuitive frontend experiences. I've also explored <strong>AI prompt engineering</strong>, giving me a unique perspective on human-AI interaction.
+          </p>
+          <p>
+            Currently pursuing my <strong>B.Tech in Computer Science (AI & ML)</strong> at Geethanjali Institute of Science and Technology, I'm eager to join a dynamic team where I can keep learning, contribute meaningfully, and grow into a well-rounded engineer.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <span class="about-card-icon">⚡</span>
+              <div>
+                <strong>Fast Learner</strong>
+                <p>Quick to adapt to new technologies and frameworks.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon">🎯</span>
+              <div>
+                <strong>Goal-Oriented</strong>
+                <p>Focused on delivering clean, production-ready code.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon">🤝</span>
+              <div>
+                <strong>Team Player</strong>
+                <p>Strong communicator with collaborative mindset.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-info fade-in-right">
+          <div class="info-card">
+            <h3>Quick Info</h3>
+            <ul class="info-list">
+              <li><span class="info-label">📍 Location</span><span>Nellore, India</span></li>
+              <li><span class="info-label">🎓 Degree</span><span>B.Tech CS (AI & ML)</span></li>
+              <li><span class="info-label">🏫 College</span><span>GIST, Nellore</span></li>
+              <li><span class="info-label">📅 Graduation</span><span>2026</span></li>
+              <li><span class="info-label">💼 Status</span><span class="status-open">Open to Work</span></li>
+              <li><span class="info-label">📧 Email</span><span>muheedshaik6843@gmail.com</span></li>
+            </ul>
+            <a href="mailto:muheedshaik6843@gmail.com" class="btn btn-primary btn-full">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EDUCATION ═══════════════════════════════════════ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-label">02 / Education</div>
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">B.Tech in Computer Science (AI & ML)</h3>
+                <p class="timeline-org">Geethanjali Institute of Science and Technology</p>
+                <p class="timeline-loc">📍 Nellore, India</p>
+              </div>
+              <div class="timeline-year">
+                <span>2022</span>
+                <span class="year-divider">→</span>
+                <span class="year-current">2026</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Specializing in Artificial Intelligence and Machine Learning within Computer Science. Building strong foundations in algorithms, data structures, full-stack development, and AI/ML concepts.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Computer Science</span>
+              <span class="tag">AI & ML</span>
+              <span class="tag">Full Stack Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up" style="--delay:0.15s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Intermediate Education (MPC)</h3>
+                <p class="timeline-org">Narayana Junior College</p>
+                <p class="timeline-loc">📍 Nellore, India</p>
+              </div>
+              <div class="timeline-year">
+                <span>2020</span>
+                <span class="year-divider">→</span>
+                <span>2022</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Completed Intermediate education with focus on Mathematics, Physics, and Chemistry, establishing strong analytical and logical reasoning skills.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Mathematics</span>
+              <span class="tag">Physics</span>
+              <span class="tag">Chemistry</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SKILLS ═══════════════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label">03 / Skills</div>
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group fade-in-up">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">{ }</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-lang">Java</span>
+            <span class="badge badge-lang">Python</span>
+            <span class="badge badge-lang">JavaScript</span>
+            <span class="badge badge-lang">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in-up" style="--delay:0.1s">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">◈</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-frontend">HTML5</span>
+            <span class="badge badge-frontend">CSS3</span>
+            <span class="badge badge-frontend">React.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in-up" style="--delay:0.2s">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">⚙</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-backend">Spring Boot</span>
+            <span class="badge badge-backend">Flask</span>
+            <span class="badge badge-backend">REST APIs</span>
+            <span class="badge badge-backend">MVC Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in-up" style="--delay:0.3s">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🗄</span>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-db">MySQL</span>
+            <span class="badge badge-db">CRUD Operations</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in-up" style="--delay:0.4s">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🛠</span>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-tool">Git</span>
+            <span class="badge badge-tool">GitHub</span>
+            <span class="badge badge-tool">Postman</span>
+            <span class="badge badge-tool">VS Code</span>
+            <span class="badge badge-tool">Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in-up" style="--delay:0.5s">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">✦</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-soft">Communication</span>
+            <span class="badge badge-soft">Teamwork</span>
+            <span class="badge badge-soft">Problem Solving</span>
+            <span class="badge badge-soft">Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Concepts Bar -->
+      <div class="concepts-row fade-in-up" style="--delay:0.6s">
+        <h3 class="concepts-title">Core Concepts</h3>
+        <div class="concept-bars">
+          <div class="concept-bar">
+            <div class="concept-label"><span>REST APIs</span><span>85%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="concept-bar">
+            <div class="concept-label"><span>Spring Boot</span><span>80%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="concept-bar">
+            <div class="concept-label"><span>React.js</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="concept-bar">
+            <div class="concept-label"><span>MySQL / CRUD</span><span>80%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="concept-bar">
+            <div class="concept-label"><span>Prompt Engineering</span><span>70%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EXPERIENCE ═══════════════════════════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-label">04 / Experience</div>
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in-up">
+          <div class="timeline-dot timeline-dot-accent"></div>
+          <div class="timeline-content exp-card">
+            <div class="exp-badge">Full Stack Internship</div>
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Java Full Stack Intern</h3>
+                <p class="timeline-org">VaultSphere AI Technologies Pvt. Ltd</p>
+              </div>
+              <div class="timeline-year">
+                <span>Dec 2025</span>
+                <span class="year-divider">→</span>
+                <span class="year-current">Apr 2026</span>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li>Developed full-stack applications using <strong>Java</strong> and <strong>Spring Boot</strong>, building REST APIs and handling business logic.</li>
+              <li>Designed responsive user interfaces using <strong>HTML, CSS, JavaScript, and React</strong>, integrated with backend services.</li>
+              <li>Managed data using <strong>MySQL</strong>, tested APIs using <strong>Postman</strong>, and improved application performance through debugging.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in-up" style="--delay:0.15s">
+          <div class="timeline-dot timeline-dot-accent"></div>
+          <div class="timeline-content exp-card">
+            <div class="exp-badge exp-badge-alt">AI Internship</div>
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Prompt Engineering Intern</h3>
+                <p class="timeline-org">ExcelR (Online)</p>
+              </div>
+              <div class="timeline-year">
+                <span>May 2025</span>
+                <span class="year-divider">→</span>
+                <span>Jul 2025</span>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li>Designed and refined prompts to improve <strong>AI-generated responses</strong> for accuracy and relevance.</li>
+              <li>Evaluated outputs based on clarity, accuracy, and relevance using structured evaluation criteria.</li>
+              <li>Applied basic <strong>NLP</strong> and prompt engineering concepts to real-world AI use cases.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">NLP</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROJECTS ═══════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">05 / Projects</div>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card fade-in-up">
+          <div class="project-card-inner">
+            <div class="project-number">01</div>
+            <div class="project-icon">🌐</div>
+            <h3 class="project-title">Job Portal Web Application</h3>
+            <p class="project-desc">
+              A full-stack job portal with user authentication and job application features. Supports job posting, search, and user management through a RESTful backend.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Spring Boot</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">REST APIs</span>
+              <span class="stack-tag">JWT Auth</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muheedshaik6843" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in-up" style="--delay:0.15s">
+          <div class="project-card-inner">
+            <div class="project-number">02</div>
+            <div class="project-icon">✅</div>
+            <h3 class="project-title">Task Manager Application</h3>
+            <p class="project-desc">
+              A backend application to manage tasks with full CRUD operations. Clean REST API design with Spring Boot and MySQL for persistent data storage.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Spring Boot</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">CRUD</span>
+              <span class="stack-tag">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muheedshaik6843" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in-up" style="--delay:0.3s">
+          <div class="project-card-inner">
+            <div class="project-number">03</div>
+            <div class="project-icon">🛒</div>
+            <h3 class="project-title">E-Commerce Backend System</h3>
+            <p class="project-desc">
+              Backend APIs for product management, cart, and order processing. Structured with MVC architecture following REST principles for a scalable, maintainable codebase.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Spring Boot</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">MVC</span>
+              <span class="stack-tag">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/muheedshaik6843" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link project-link-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CERTIFICATIONS ═══════════════════════════════════════ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-label">06 / Certifications</div>
+      <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card fade-in-up">
+          <div class="cert-logo cert-logo-ibm">IBM</div>
+          <div class="cert-body">
+            <h3 class="cert-title">Linux Commands and Shell Scripting</h3>
+            <p class="cert-issuer">IBM — via Coursera</p>
+            <p class="cert-year">2024</p>
+            <p class="cert-desc">Hands-on experience with Linux CLI, file management, and basic shell scripting for automation workflows.</p>
+          </div>
+          <div class="cert-ribbon">Verified</div>
+        </div>
+
+        <div class="cert-card fade-in-up" style="--delay:0.15s">
+          <div class="cert-logo cert-logo-tcs">TCS</div>
+          <div class="cert-body">
+            <h3 class="cert-title">Soft Skills Certification</h3>
+            <p class="cert-issuer">TCS iON</p>
+            <p class="cert-year">2024</p>
+            <p class="cert-desc">Covered communication, teamwork, problem-solving, and professional workplace skills for industry readiness.</p>
+          </div>
+          <div class="cert-ribbon">Verified</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">07 / Contact</div>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-intro fade-in-up">
+        I'm actively looking for new opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!
+      </p>
+      <div class="contact-grid">
+        <div class="contact-cards fade-in-up">
+          <a href="mailto:muheedshaik6843@gmail.com" class="contact-card">
+            <div class="contact-card-icon">✉</div>
+            <div>
+              <p class="contact-card-label">Email</p>
+              <p class="contact-card-value">muheedshaik6843@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+917893137956" class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <p class="contact-card-label">Phone</p>
+              <p class="contact-card-value">+91 7893137956</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/muheed-shaik" target="_blank" class="contact-card">
+            <div class="contact-card-icon">in</div>
+            <div>
+              <p class="contact-card-label">LinkedIn</p>
+              <p class="contact-card-value">linkedin.com/in/muheed-shaik</p>
+            </div>
+          </a>
+          <a href="https://github.com/muheedshaik6843" target="_blank" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div>
+              <p class="contact-card-label">GitHub</p>
+              <p class="contact-card-value">github.com/muheedshaik6843</p>
+            </div>
+          </a>
+          <div class="contact-card no-hover">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <p class="contact-card-label">Location</p>
+              <p class="contact-card-value">Nellore, Andhra Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta fade-in-right">
+          <div class="cta-box">
+            <h3>Ready to collaborate?</h3>
+            <p>I'm currently open to full-time roles, internships, and freelance opportunities as a Java Full Stack Developer.</p>
+            <a href="mailto:muheedshaik6843@gmail.com" class="btn btn-primary btn-lg">Send a Message ✉</a>
+            <a href="https://linkedin.com/in/muheed-shaik" target="_blank" class="btn btn-outline btn-lg">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="nav-logo">SM<span class="dot">.</span></span>
+        <p>Aspiring Java Full Stack Developer<br />building scalable solutions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/muheedshaik6843" target="_blank" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/muheed-shaik" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:muheedshaik6843@gmail.com" class="social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Shaik Muheed. Crafted with ❤ and lots of ☕</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════ THEME SCRIPT (pure JS, minimal) ═══════════════════════════════════════ -->
+  <script>
+    /* ---------- Theme Toggle ---------- */
+    const btn = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', saved);
+    btn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    /* ---------- Sticky Navbar ---------- */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ---------- Intersection Observer for fade-in ---------- */
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in-up, .fade-in-right').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
